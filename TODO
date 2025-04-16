@@ -1,0 +1,136 @@
+1). Python
+- python data types
+str, int, bool, float
+list, tuple, dict, set
+
+d = {key:value}
+s = {1, 2, 4, 4}
+-------------------------
+- mutable, immutable
+list,      tuple
+-------------------------
+- context manager(custom)
+
+with open("main.txt", 'a') as f:
+    f.write('salom')
+
+
+😎😎😎😎😎😎😎😎
+2)  - OOP (barcha concept lari bn)
+   1. Obyekt (Object)
+   2. Klass (Class)
+
+   3. Inkapsulyatsiya (Encapsulation)
+   4. Meros olish (Inheritance)
+   5. Polimorfizm (Polymorphism)
+   6. Abstraktsiya (Abstraction)
+
+class Shaxs:
+
+    def __init__(self, ism, familya, yosh):
+        self.ism = ism
+        self.familya = familya
+        self.yosh = yosh
+
+    def salom():
+        return self.ism
+
+
+class Inson(Shaxs):
+
+    def salom():
+        return self.yosh
+
+
+
+shaxs1 = Shaxs('Ali', 'Vali', 23)
+print(shaxs1.salom())
+
+
+inson1 = Inson('Sherbek', 'Qodir', 78)
+print(inson1.salom())
+
+
+😎😎😎😎😎😎😎😎😎
+3)
+-DB(To'liq sqlite3 va postgresql)
+
+C reate
+R ead
+U pdate
+D elete
+
+CREATE TABLE IF NOT EXSITS users(
+    id INT,
+    name VARCHAR(25)
+    )
+
+INSERT INTO users(id,name) VALUES(1, 'Jin Won')
+
+SELECT * from users
+
+UPDATE users SET name='Abdulaziz' WHERE id=2
+
+DELETE from users WHERE id = 1
+
+
+-nginx  nima? To'liq
+-gunicorn nima? To'liq
+
+😎😎😎😎😎😎😎😎😎😎😎😎😎😎
+4)
+backend
+    - http, graphql, ws, grcp
+    - xml, json, yml, proto
+    - http method, status
+
+1. GET
+2. POST
+3. PUT
+4. PATCH
+5. DELETE
+
+200, 201, 400, 404, 500
+
+    - top attacks (https://www.fortinet.com/resources/cyberglossary/types-of-cyber-attacks)
+    - caching
+😎😎😎😎😎😎😎😎😎😎😎
+5)
+django
+
+    - function & class based views
+
+def index(request):
+    return render(request, 'index.html')
+
+class IndexView(TemlateView):
+    template_name = 'index.html'
+
+    DJANGO   >  DRF
+    ListView > ListApiView
+    DetailView > RetriveApiView
+    DeleteView > DestroyApiView
+
+    - generic views
+    - type of response
+    - django orm, Q, F, When ....
+    - model class meta
+    - modelfields
+    - forms
+    - permissions
+    - manager
+    - queryset
+    - migrations
+    - django commands (custom)
+    - prefetch_related, select_related
+    - bir nechta db ulash (foydalanish)
+    - optimize qilish
+
+    custom qilish
+    - adminka
+    - middleware
+    - context processor
+    - template tags
+    - custom pagination, filter
+    - validation
+    - user
